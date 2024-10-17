@@ -42,7 +42,7 @@ public class GlobalExceptionHandler {
                 "CURRENCY_NOT_FOUND",
                 HttpStatus.NOT_FOUND.value()
         );
-        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(ConvertingException.class)

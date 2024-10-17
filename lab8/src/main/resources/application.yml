@@ -11,10 +11,12 @@ springdoc:
 custom:
   api:
     currency: https://cbr.ru/scripts/XML_daily_eng.asp
+    events: https://kudago.com/public-api/v1.4/events/
   links:
     base-url: http://localhost:8080
   cache: currencyDataCache
-
+  filters:
+    events: "?fields=id,title,price&order_by=-price&text_format=plain"
 
 resilience4j:
   circuitbreaker:

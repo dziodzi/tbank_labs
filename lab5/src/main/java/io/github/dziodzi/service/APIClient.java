@@ -2,6 +2,7 @@ package io.github.dziodzi.service;
 
 import io.github.dziodzi.entity.Category;
 import io.github.dziodzi.entity.Location;
+import io.github.dziodzi.tools.LogExecutionTime;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @Slf4j
 @Component
+@LogExecutionTime
 public class APIClient {
 
     private final RestTemplate restTemplate;

@@ -15,7 +15,6 @@ import java.util.Collection;
 
 @Slf4j
 @Service
-@LogExecutionTime
 @RequiredArgsConstructor
 public class LocationService {
 

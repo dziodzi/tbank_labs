@@ -8,3 +8,11 @@ custom:
     locations-url: https://kudago.com/public-api/v1.4/locations
   links:
     base-url: http://localhost:8080
+  thread:
+    pool:
+      size: 1
+  initialization:
+    schedule: PT10S
+
+# 1 Data initialization completed in 1066 ms
+# 2 Data initialization completed in 1056 ms.
